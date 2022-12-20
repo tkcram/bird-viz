@@ -63,7 +63,7 @@ const Bird = () => {
 		<main>
 			<div className='row'>
 				<div className='module' id='hero'>
-					<img src={bioData["Hero Href"]}/>
+					<img src={bioData["Hero Href"]} alt=""/>
 				</div>
 				<Biography gameData={gameData} description={bioData["Description"]}/>
 			</div>

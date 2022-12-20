@@ -1,5 +1,4 @@
 import {useEffect} from 'react'
-import * as d3 from 'd3'
 
 const Biography = ({ gameData, description }) => {
 	const commonName = gameData["Common name"];

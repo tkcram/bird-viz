@@ -9,7 +9,7 @@ const Lifecycle = ({bioData,nestType,eggCapacity}) => {
 		}
 
 		const lifecycleSvg = d3.select("#lifecycle")
-		const lifecycleColor = ""
+		// const lifecycleColor = ""
 
 
 		const lifecycleData = [
@@ -71,6 +71,7 @@ const Lifecycle = ({bioData,nestType,eggCapacity}) => {
                 d3.select("#lifecycleTooltip")
                 .html(`${d.text}`);
 	        });
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
 	return (

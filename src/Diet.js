@@ -167,6 +167,7 @@ const Diet = ({commonName,invertebrate,seed,fish,fruit,rodent,nectar,wild}) => {
             nodes.attr("x", d=>d.x - 20)
                 .attr("y", d=>d.y - 20)
         });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (

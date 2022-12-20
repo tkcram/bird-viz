@@ -95,7 +95,7 @@ const Wingspan = ({wingspan}) => {
 	          	d3.selectAll(`.${event.target.value}`)
 	          	.style("opacity",(d)=> birdChecked ? 1 : 0)
         	})
-
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	},[])
 
 	return (

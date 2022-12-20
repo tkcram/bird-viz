@@ -19,7 +19,7 @@ const Range = ({commonName, isWetland,isGrassland,isForest}) => {
 
 		const geoPath = d3.geoPath(projection);
 
-		let data = new Map(); 
+		// let data = new Map(); 
 
 		Promise.all([
 			d3.json("/data/counties-10m.json"),
@@ -74,6 +74,7 @@ const Range = ({commonName, isWetland,isGrassland,isForest}) => {
 				.attr("class", "axis") 
 				.call(rangeAxis);
 		});
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
 	return (
@@ -85,7 +86,7 @@ const Range = ({commonName, isWetland,isGrassland,isForest}) => {
 			<p id='rangeText'>Hover over for count</p>
 			<svg id='range' width="25vw" height="max(calc(50vh - 67px), 343px)"/>
 			<div id='rangeScale'>
-				<img id='rangeScaleImg' src='/assets/greens.png'/>
+				<img id='rangeScaleImg' src='/assets/greens.png' alt=""/>
 				<svg id='rangeScaleText' height="25" width="10vw"></svg>
 			</div>
 		</div>

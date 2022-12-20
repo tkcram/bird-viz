@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Navigate, Routes, useSearchParams } from "react-router-dom";
+import { BrowserRouter, Route, Navigate, Routes } from "react-router-dom";
 import Home from './Home'
 import Bird from './Bird'
 import Error from './Error'
